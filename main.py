@@ -51,14 +51,14 @@ if price_percent_diff >2:
     # print(article_description)
     # print(article_headline)
     for article in first_three_articles:
-        account_sid = "ACaae275699e16aa44a3c31df6810c0e5b"
-        auth_token = '5c5cb6b60ed76bb38dc5e013f662f411'
+        account_sid = "***************"
+        auth_token = '***********'
         client = Client(account_sid, auth_token)
         message = client.messages \
             .create(
             body=f"{STOCK_NAME}:{price_percent_diff}%\nHeadline:{article['title']}\nBrief:{article['description']}",
-            from_='+12138954731',
-            to='+16478773721'
+            from_='+12138954***',
+            to='+1647877****'
         )
     ## STEP 2: https://newsapi.org/ 
     # Instead of printing ("Get News"), actually get the first 3 news pieces for the COMPANY_NAME. 
